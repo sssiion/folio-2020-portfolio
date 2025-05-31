@@ -3,80 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sagar Shah | Product Designer</title>
+  <title>Personal Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">Sagar Shah</div>
-      <nav class="main-nav">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Alex Kim</div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Hi, I’m Sagar.<br>Product Designer</h1>
-        <p>I design digital products that delight and empower users. Let’s create something amazing together!</p>
-        <a href="#work" class="btn">View Work</a>
+    <img class="profile-img" src="https://placehold.co/160x160" alt="Profile" />
+    <h1>Hi, I'm Alex Kim</h1>
+    <p class="subtitle">Product Designer & Developer</p>
+    <div class="socials">
+      <a href="#" aria-label="LinkedIn"><img src="https://placehold.co/32x32?text=LI" alt="LinkedIn"></a>
+      <a href="#" aria-label="GitHub"><img src="https://placehold.co/32x32?text=GH" alt="GitHub"></a>
+      <a href="#" aria-label="Twitter"><img src="https://placehold.co/32x32?text=TW" alt="Twitter"></a>
+    </div>
+    <a class="btn primary" href="#contact">Contact Me</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="work">
+    <h2>Featured Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <img src="https://placehold.co/320x180" alt="Project 1">
+        <div class="project-info">
+          <h3>Project Alpha</h3>
+          <p>Modern web app for productivity.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>UI/UX</span></div>
+        </div>
       </div>
-      <div class="hero-img">
-        <img src="https://placehold.co/320x320" alt="Sagar Shah" />
+      <div class="project-card">
+        <img src="https://placehold.co/320x180" alt="Project 2">
+        <div class="project-info">
+          <h3>Beta Blog</h3>
+          <p>Minimal blog platform for creators.</p>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="work" id="work">
-    <div class="container">
-      <h2>Selected Work</h2>
-      <div class="work-list">
-        <div class="work-item">
-          <img src="https://placehold.co/400x240" alt="Project 1" />
-          <div class="work-info">
-            <h3>Project One</h3>
-            <p>Short description of project one.</p>
-          </div>
-        </div>
-        <div class="work-item">
-          <img src="https://placehold.co/400x240" alt="Project 2" />
-          <div class="work-info">
-            <h3>Project Two</h3>
-            <p>Short description of project two.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- About Section -->
   <section class="about" id="about">
-    <div class="container">
-      <h2>About</h2>
-      <p>I’m a product designer based in LA. I specialize in creating user-centered digital experiences, blending creativity and technology. Let’s connect and make something great together.</p>
+    <h2>About Me</h2>
+    <p>I'm a product designer and developer based in Seoul. I love building delightful digital experiences and collaborating with creative teams. My skills include UI/UX, frontend, and prototyping.</p>
+    <div class="skills">
+      <span>UI/UX</span>
+      <span>Figma</span>
+      <span>React</span>
+      <span>HTML/CSS</span>
+      <span>JavaScript</span>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Have a project or question? Let’s connect!</p>
-      <a href="mailto:sagar@example.com" class="btn">Email Me</a>
+    <h2>Contact</h2>
+    <p>Have a project or question? Let’s connect!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+    <div class="contact-socials">
+      <a href="#" aria-label="LinkedIn"><img src="https://placehold.co/28x28?text=LI" alt="LinkedIn"></a>
+      <a href="#" aria-label="GitHub"><img src="https://placehold.co/28x28?text=GH" alt="GitHub"></a>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <span>© 2025 Alex Kim</span>
       <div class="footer-socials">
-        <a href="#" class="footer-link">Instagram</a>
-        <a href="#" class="footer-link">Twitter</a>
-        <a href="#" class="footer-link">Linkedin</a>
+        <a href="#"><img src="https://placehold.co/24x24?text=LI" alt="LinkedIn"></a>
+        <a href="#"><img src="https://placehold.co/24x24?text=GH" alt="GitHub"></a>
       </div>
-      <div class="footer-copy">© 2025 Sagar Shah</div>
     </div>
   </footer>
 </body>
